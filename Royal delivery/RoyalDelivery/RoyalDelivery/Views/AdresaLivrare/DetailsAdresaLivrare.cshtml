@@ -1,0 +1,52 @@
+﻿@model RoyalDelivery.Models.DBObjects.AdresaLivrareModel
+
+@{
+    ViewData["Title"] = "DetailsAdresaLivrare";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detalii adresa livrare</h1>
+
+<div>
+    <h4>AdresaLivrareModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Judet)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Judet)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Oras)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Oras)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Strada)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Strada)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Numar)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Numar)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.InformatiiAditionale)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.InformatiiAditionale)
+        </dd>
+    </dl>
+</div>
+<div>
+    @if (User.IsInRole("Admin"))
+                        {
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdAdresaLivrare })
+                        }
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,54 @@
+﻿@model RoyalDelivery.Models.DBObjects.DateLivrareModel
+
+@{
+    ViewData["Title"] = "CreateDateLivrare";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Adaugare date de livrare</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdAdresaLivrare" class="control-label"></label>
+                <input asp-for="IdAdresaLivrare" class="form-control" />
+                <span asp-validation-for="IdAdresaLivrare" class="text-danger">Adresa Livrare ID</span>
+                <br />
+                <br />
+            </div>
+            <div class="form-group">
+                <label asp-for="IdContactClient" class="control-label"></label>
+                <input asp-for="IdContactClient" class="form-control" />
+                <span asp-validation-for="IdContactClient" class="text-danger">Contact Client ID</span>
+                <br />
+                <br />
+            </div>
+            <div class="form-group">
+                Data Livrare
+                @Html.TextBoxFor(model => model.DataLivrare, new
+                    {
+                        @class = "form-control",
+                        type = "date"
+                    })
+                <br />
+                <br />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

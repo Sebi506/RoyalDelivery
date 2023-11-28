@@ -1,0 +1,63 @@
+﻿@model RoyalDelivery.Models.DBObjects.ColetModel
+
+@{
+    ViewData["Title"] = "CreateColet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Adaugare colet</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdDateLivrare" class="control-label"></label>
+                <input asp-for="IdDateLivrare" class="form-control" />
+                <span asp-validation-for="IdDateLivrare" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdInformatiiPlata" class="control-label"></label>
+                <input asp-for="IdInformatiiPlata" class="form-control" />
+                <span asp-validation-for="IdInformatiiPlata" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdLivrator" class="control-label"></label>
+                <input asp-for="IdLivrator" class="form-control" />
+                <span asp-validation-for="IdLivrator" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Awb" class="control-label"></label>
+                <input asp-for="Awb" class="form-control" />
+                <span asp-validation-for="Awb" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                Stare Colet <br />
+                @Html.RadioButtonFor(Model => Model.StareColet, "In depozit", false)@Html.Label("In depozit")
+                @Html.RadioButtonFor(Model => Model.StareColet, "In curs de livrare", false)@Html.Label("In curs de livrare")
+                @Html.RadioButtonFor(Model => Model.StareColet, "Livrat", false)@Html.Label("Livrat")
+                <br />
+                <br />
+            </div>
+            <div class="form-group">
+                <label asp-for="LocatieDepozit" class="control-label"></label>
+                <input asp-for="LocatieDepozit" class="form-control" />
+                <span asp-validation-for="LocatieDepozit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

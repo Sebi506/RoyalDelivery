@@ -1,0 +1,71 @@
+﻿@model IEnumerable<RoyalDelivery.Models.DBObjects.AdresaLivrareModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista adrese livrare</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAdresaLivrare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Judet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Oras)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Strada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Numar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InformatiiAditionale)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdAdresaLivrare)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Judet)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Oras)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Strada)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Numar)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InformatiiAditionale)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { item.IdAdresaLivrare })
+
+                    @if (User.IsInRole("Admin"))
+                    {
+                        @Html.ActionLink("Edit", "Edit", new { item.IdAdresaLivrare })
+                        @Html.ActionLink("Delete", "Delete", new { item.IdAdresaLivrare })
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

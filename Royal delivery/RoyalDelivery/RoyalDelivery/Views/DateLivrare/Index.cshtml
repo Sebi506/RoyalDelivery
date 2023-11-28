@@ -1,0 +1,59 @@
+﻿@model IEnumerable<RoyalDelivery.Models.DBObjects.DateLivrareModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista date de livrare</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdDateLivrare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAdresaLivrare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdContactClient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataLivrare)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdDateLivrare)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdAdresaLivrare)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdContactClient)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataLivrare)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.IdDateLivrare })
+
+                    @if (User.IsInRole("Admin"))
+                    {
+                        @Html.ActionLink("Edit", "Edit", new { id = item.IdDateLivrare })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.IdDateLivrare })
+                        }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,46 @@
+﻿@model RoyalDelivery.Models.DBObjects.InformatiiPlataModel
+
+@{
+    ViewData["Title"] = "EditInformatiiPlata";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Modificare informatii plata</h1>
+
+<h4>InformatiiPlataModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input asp-for="IdInformatiiPlata" class="form-control" hidden />
+            </div>
+            <div class="form-group">
+                Modalitate Plata <br />
+                @Html.RadioButtonFor(Model => Model.TipPlata, "Card", false)@Html.Label("Card")
+                @Html.RadioButtonFor(Model => Model.TipPlata, "Ramburs", false)@Html.Label("Ramburs")
+                <br />
+                <br />
+            </div>
+            <div class="form-group">
+                <label asp-for="SumaDatorata" class="control-label">Suma datorata</label>
+                <input asp-for="SumaDatorata" class="form-control" />
+                <span asp-validation-for="SumaDatorata" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

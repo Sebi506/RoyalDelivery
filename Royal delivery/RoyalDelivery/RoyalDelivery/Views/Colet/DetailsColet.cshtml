@@ -1,0 +1,64 @@
+﻿@model RoyalDelivery.Models.DBObjects.ColetDetailedModel
+
+@{
+    ViewData["Title"] = "DetailsColet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detalii colet</h1>
+
+<div>
+    <h4>ColetModel</h4>
+    <hr />
+        @if (User.IsInRole("Admin") || User.IsInRole("Employee"))
+        {
+             
+        <p>@Html.DisplayNameFor(model => model.Awb) : @Html.DisplayFor(model => model.Awb)</p>
+        <br />
+
+        <p> @Html.DisplayNameFor(model => model.StareColet) : @Html.DisplayFor(model => model.StareColet)</p>
+
+        <br />
+        <p> @Html.DisplayNameFor(model => model.DataLivrare) : @Html.DisplayFor(model => model.DataLivrare)</p>
+
+        <br />
+        <p>@Html.DisplayNameFor(model => model.LocatieDepozit) : @Html.DisplayFor(model => model.LocatieDepozit)</p>
+
+        <br />
+        <p> @Html.DisplayNameFor(model => model.Nume) : @Html.DisplayFor(model => model.Nume)</p>
+
+        <br />
+        <p> @Html.DisplayNameFor(model => model.Prenume) : @Html.DisplayFor(model => model.Prenume)</p>
+
+        <br />
+        <p> @Html.DisplayNameFor(model => model.Email) : @Html.DisplayFor(model => model.Email)</p>
+
+        <br />
+        <p> @Html.DisplayNameFor(model => model.NumarTelefon) : @Html.DisplayFor(model => model.NumarTelefon)</p>
+
+        <br />
+        <p> @Html.DisplayNameFor(model => model.Judet) : @Html.DisplayFor(model => model.Judet)</p>
+
+        <br />
+        <p> @Html.DisplayNameFor(model => model.Oras) : @Html.DisplayFor(model => model.Oras)</p>
+
+        <br />
+        <p>  @Html.DisplayNameFor(model => model.Strada) : @Html.DisplayFor(model => model.Strada)</p>
+
+        <br />
+        <p>  @Html.DisplayNameFor(model => model.Numar) : @Html.DisplayFor(model => model.Numar)</p>
+
+        <br />
+        <p>  @Html.DisplayNameFor(model => model.InformatiiAditionale) : @Html.DisplayFor(model => model.InformatiiAditionale)</p>
+
+        <br />
+        <p>   @Html.DisplayNameFor(model => model.TipPlata) : @Html.DisplayFor(model => model.TipPlata)</p>
+
+        <br />
+        <p>   @Html.DisplayNameFor(model => model.SumaDatorata) : @Html.DisplayFor(model => model.SumaDatorata)</p>
+
+        <br />
+        }
+            
+</div>
+

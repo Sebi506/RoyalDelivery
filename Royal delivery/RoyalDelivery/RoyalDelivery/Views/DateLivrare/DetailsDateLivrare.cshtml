@@ -1,0 +1,37 @@
+﻿@model RoyalDelivery.Models.DBObjects.DateLivrareModel
+
+@{
+    ViewData["Title"] = "DetailsDateLivrare";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detalii date de livrare</h1>
+
+<div>
+    <h4>DateLivrareModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdAdresaLivrare)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdAdresaLivrare)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdContactClient)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdContactClient)
+        </dd>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DataLivrare)
+        </dd>
+    </dl>
+</div>
+<div>
+    @if (User.IsInRole("Admin"))
+                    {
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdDateLivrare })
+                    }
+    <a asp-action="Index">Back to List</a>
+</div>

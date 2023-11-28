@@ -1,0 +1,65 @@
+﻿@model IEnumerable<RoyalDelivery.Models.DBObjects.ContactClientModel>
+
+@{
+    ViewData["Title"] = "ContactClientIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista informatii de contact</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdContactClient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prenume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumarTelefon)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdContactClient)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nume)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Prenume)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumarTelefon)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.IdContactClient }) 
+
+                    @if (User.IsInRole("Admin"))
+                    {
+                    @Html.ActionLink("Edit", "Edit", new { id = item.IdContactClient })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.IdContactClient })
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+﻿@model RoyalDelivery.Models.DBObjects.InformatiiPlataModel
+
+@{
+    ViewData["Title"] = "DeleteInformatiiPlata";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Stergere informatii plata</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>InformatiiPlataModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TipPlata)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TipPlata)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SumaDatorata)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SumaDatorata)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

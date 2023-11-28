@@ -1,0 +1,63 @@
+﻿@model RoyalDelivery.Models.DBObjects.ColetModel
+
+@{
+    ViewData["Title"] = "DeleteColet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Stergere colet</h1>
+
+<h3>Esti sigur ca vrei sa stergi coletul?</h3>
+<div>
+    <h4>ColetModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdColet)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdColet)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdDateLivrare)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdDateLivrare)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdInformatiiPlata)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdInformatiiPlata)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdLivrator)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdLivrator)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Awb)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Awb)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StareColet)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StareColet)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LocatieDepozit)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LocatieDepozit)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

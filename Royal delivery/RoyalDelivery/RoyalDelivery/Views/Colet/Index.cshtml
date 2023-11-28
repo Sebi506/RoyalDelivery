@@ -1,0 +1,109 @@
+﻿@model IEnumerable<RoyalDelivery.Models.DBObjects.ColetModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista Colete</h1>
+
+<form asp-action="Search">
+    <label for="searchTerm">AWB Colet:</label>
+    <input type="text" id="searchTerm" name="searchTerm" />
+    <input type="submit" value="Cauta" />
+</form>
+
+@if (User.IsInRole("Admin") || User.IsInRole("Employee"))
+            {
+<form asp-action="Filter">
+    <label for="Livrator">Ordoneaza dupa livrator</label>
+    <select id="id" name="id">
+        <option value="6dd337d5-929d-4655-88c7-040c64d6d588">Surubariu Vlad Marian</option>
+        <option value="4409f9dc-05b8-4b41-9093-0b4c5a61665f">Matei Eusebiu Andrei</option>
+        <option value="5d0296c2-d765-49f1-94a7-546babdf4264">Ricioiu Alexandru Marian</option>
+        <input type="submit" value="Cauta">
+    </select>
+</form>
+            }
+ @if(User.IsInRole("Admin"))
+ {
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            @if (User.IsInRole("Admin"))
+            {
+                <th>
+                    @Html.DisplayNameFor(model => model.IdColet)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdDateLivrare)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdInformatiiPlata)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdLivrator)
+                </th>
+            }
+            <th>
+                @Html.DisplayNameFor(model => model.Awb)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StareColet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocatieDepozit)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @if (User.IsInRole("Admin"))
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdColet)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdDateLivrare)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdInformatiiPlata)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdLivrator)
+                    </td>
+                }
+                <td>
+                    @Html.DisplayFor(modelItem => item.Awb)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StareColet)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LocatieDepozit)
+                </td>
+                <td>
+                    @if (User.IsInRole("Admin") || User.IsInRole("Employee"))
+                    {
+                        @Html.ActionLink("Details", "Details", new { id = item.IdColet })
+                    }
+                    @if (User.IsInRole("Admin"))
+                    {
+                        @Html.ActionLink("Edit", "Edit", new { id = item.IdColet })
+
+                        <br />
+
+                        @Html.ActionLink("Delete", "Delete", new { id = item.IdColet })
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

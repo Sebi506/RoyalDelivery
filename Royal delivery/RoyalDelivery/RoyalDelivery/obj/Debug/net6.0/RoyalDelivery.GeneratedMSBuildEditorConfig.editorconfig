@@ -1,0 +1,191 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RoyalDelivery
+build_property.RootNamespace = RoyalDelivery
+build_property.ProjectDir = C:\Users\seby5\source\repos\RoyalDelivery\RoyalDelivery\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\seby5\source\repos\RoyalDelivery\RoyalDelivery
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/AdresaLivrare/CreateAdresaLivrare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRyZXNhTGl2cmFyZVxDcmVhdGVBZHJlc2FMaXZyYXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/AdresaLivrare/DeleteAdresaLivrare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRyZXNhTGl2cmFyZVxEZWxldGVBZHJlc2FMaXZyYXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/AdresaLivrare/DetailsAdresaLivrare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRyZXNhTGl2cmFyZVxEZXRhaWxzQWRyZXNhTGl2cmFyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/AdresaLivrare/EditAdresaLivrare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRyZXNhTGl2cmFyZVxFZGl0QWRyZXNhTGl2cmFyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/AdresaLivrare/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRyZXNhTGl2cmFyZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Colet/CreateColet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sZXRcQ3JlYXRlQ29sZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Colet/DeleteColet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sZXRcRGVsZXRlQ29sZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Colet/DetailsColet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sZXRcRGV0YWlsc0NvbGV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Colet/EditColet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sZXRcRWRpdENvbGV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Colet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sZXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/ContactClient/CreateContactClient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdENsaWVudFxDcmVhdGVDb250YWN0Q2xpZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/ContactClient/DeleteContactClient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdENsaWVudFxEZWxldGVDb250YWN0Q2xpZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/ContactClient/DetailsContactClient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdENsaWVudFxEZXRhaWxzQ29udGFjdENsaWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/ContactClient/EditContactClient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdENsaWVudFxFZGl0Q29udGFjdENsaWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/ContactClient/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdENsaWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/DateLivrare/CreateDateLivrare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZUxpdnJhcmVcQ3JlYXRlRGF0ZUxpdnJhcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/DateLivrare/DeleteDateLivrare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZUxpdnJhcmVcRGVsZXRlRGF0ZUxpdnJhcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/DateLivrare/DetailsDateLivrare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZUxpdnJhcmVcRGV0YWlsc0RhdGVMaXZyYXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/DateLivrare/EditDateLivrare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZUxpdnJhcmVcRWRpdERhdGVMaXZyYXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/DateLivrare/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZUxpdnJhcmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/InformatiiPlata/CreateInformatiiPlata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mb3JtYXRpaVBsYXRhXENyZWF0ZUluZm9ybWF0aWlQbGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/InformatiiPlata/DeleteInformatiiPlata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mb3JtYXRpaVBsYXRhXERlbGV0ZUluZm9ybWF0aWlQbGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/InformatiiPlata/DetailsInformatiiPlata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mb3JtYXRpaVBsYXRhXERldGFpbHNJbmZvcm1hdGlpUGxhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/InformatiiPlata/EditInformatiiPlata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mb3JtYXRpaVBsYXRhXEVkaXRJbmZvcm1hdGlpUGxhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/InformatiiPlata/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mb3JtYXRpaVBsYXRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Livrator/CreateLivrator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmF0b3JcQ3JlYXRlTGl2cmF0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Livrator/DeleteLivrator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmF0b3JcRGVsZXRlTGl2cmF0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Livrator/DetailsLivrator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmF0b3JcRGV0YWlsc0xpdnJhdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Livrator/EditLivrator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmF0b3JcRWRpdExpdnJhdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Livrator/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmF0b3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seby5/source/repos/RoyalDelivery/RoyalDelivery/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-h64qpremkw

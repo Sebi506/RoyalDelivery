@@ -1,0 +1,53 @@
+﻿@model IEnumerable<RoyalDelivery.Models.DBObjects.InformatiiPlataModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista informatii plata</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdInformatiiPlata)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipPlata)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SumaDatorata)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdInformatiiPlata)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipPlata)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SumaDatorata)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.IdInformatiiPlata })
+
+                    @if (User.IsInRole("Admin"))
+                    {
+                        @Html.ActionLink("Edit", "Edit", new { id = item.IdInformatiiPlata }) 
+                        @Html.ActionLink("Delete", "Delete", new { id = item.IdInformatiiPlata })
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
